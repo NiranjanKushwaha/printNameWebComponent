@@ -27,4 +27,6 @@ class PrintName extends HTMLElement {
     }
 }
 
-customElements.define("print-name", PrintName)
+if ('customElements' in window) {
+    customElements.define("print-name", PrintName);
+}
